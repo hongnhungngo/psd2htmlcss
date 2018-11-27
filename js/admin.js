@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  var $blue_color = "#06a0bd";
+  var $pink_color = "#e76c90";
+  var $gray_color = "#f2f3f8";
+  var $text_color = "#2c304d";
+  var $blue_light_color = "#9ec1f3";
   //menu icon toggle
   $(document).on("click", ".menu__icon", function() {
     $(this)
@@ -128,7 +133,7 @@ $(document).ready(function() {
   var height = ctxhrc.canvas.height;
   var hitRateChart = new Chart(
     ctxhrc,
-    configChart("#e76c90", "#f2f3f8", 50, 50, "50%", "#2c304d")
+    configChart($pink_color, $gray_color, 50, 50, "50%", $text_color)
   );
   ctxhrc.font = "normal 20px 'Arial'";
   ctxhrc.fillStyle = "black";
@@ -140,7 +145,7 @@ $(document).ready(function() {
   var height = ctxhcc.canvas.height;
   var happyCustomerChart = new Chart(
     ctxhcc,
-    configChart("#ffffff", "#9ec1f3", 50, 50, "50%", "#ffffff")
+    configChart("#ffffff", $blue_light_color, 50, 50, "50%", "#ffffff")
   );
   ctxhcc.font = "normal 20px 'Arial'";
   ctxhcc.fillStyle = "black";
@@ -213,10 +218,51 @@ $(document).ready(function() {
   var height = ctxno.canvas.height;
   var happyCustomerChart = new Chart(
     ctxno,
-    configChart("#9ec1f3", "#f0eff4", 65, 35, "65%", "#2c304d")
+    configChart($blue_color, "#f0eff4", 65, 35, "65%", "#2c304d")
   );
   ctxno.font = "normal 20px 'Arial'";
   ctxno.fillStyle = "black";
   ctxno.textBaseline = "middle";
   ctxno.fillText("50%", width / 2 - 20, width / 2, 200);
+  // sale chart
+  var ctxsc = document.getElementById("saleChart").getContext("2d");
+  var width = ctxsc.canvas.width;
+  var height = ctxsc.canvas.height;
+  var saleChart = new Chart(ctxsc, {
+    type: "line",
+    data: {
+      labels: ["1", "2", "3", "4", "5", "6"],
+      datasets: [
+        {
+          borderColor: $blue_color,
+          fill: false,
+          data: [0, 38, 24, 69, 38, 74]
+        }
+      ]
+    },
+    options: {
+      elements: {
+        point: {
+          radius: 0
+        }
+      },
+      scales: {
+        xAxes: [
+          {
+            gridLines: { display: false, color: "#fff" },
+            ticks: { display: false }
+          }
+        ],
+        yAxes: [
+          {
+            ticks: {
+              display: false
+            },
+            gridLines: { display: false, color: "#fff" }
+          }
+        ]
+      },
+      legend: { display: false }
+    }
+  });
 });
