@@ -40,7 +40,7 @@
       <div class="header__right">
         <i class="fa fa-search header__search"></i>
         <i class="fa fa-bell header__bell"></i>
-        <div class="avatar"><img src="images/photo2.png" alt="avatar" /></div>
+        <div class="avatar"><img src="images/avatar1.jpg" alt="avatar" /></div>
         <div class="header__more">...</div>
       </div>
     </div>
@@ -202,21 +202,22 @@
       <!-- dashboard -->
       <div class="dashboard">
         <div class="d-flex mb-4">
-          <p class="dashboard__title">Dashboard</p>
+          <p class="dashboard__title font-title second-font">Dashboard</p>
           <button class="dashboard__btn ml-auto btn--generate w-color">
             Add Widget
           </button>
         </div>
+        <!-- dashboard chart -->
         <div class="row dashboard__chart">
           <div class="col-md-4">
             <div class=" hit-rate">
-              <p class="chart-title">Hit Rate</p>
+              <p class="chart-title font-title second-font">Hit Rate</p>
               <div class="hit-rate-chart">
                 <canvas id="hitRateChart"></canvas>
               </div>
             </div>
             <div class=" hit-rate happy-customer">
-              <p class="chart-title w-color">Happy Customers</p>
+              <p class="chart-title w-color font-title second-font">Happy Customers</p>
               <div class="hit-rate-chart w-color">
                 <canvas id="happyCustomerChart"></canvas>
               </div>
@@ -224,35 +225,36 @@
           </div>
           <div class="col-md-8">
             <div class="hit-rate delivered-order">
-              <p class="chart-title">Delivered Orders</p>
+              <p class="chart-title font-title second-font">Delivered Orders</p>
               <div class="delivered-order-chart">
                 <canvas id="oderChart"></canvas>
               </div>
               <div class="statistic">
                 <button class="view-all-btn btn--generate">View all</button>
-                <p>New Orders</p>
+                <p class="font-title second-font">New Orders</p>
                 <div class="hit-rate-chart new-order">
                   <canvas id="newOrder"></canvas>
                 </div>
-                <p>Total Delivered</p>
-                <p class="blue-color">2564</p>
-                <p>Total Estimated</p>
-                <p class="blue-color">834</p>
+                <p class="font-title second-font">Total Delivered</p>
+                <p class="blue-color font-title second-font">2564</p>
+                <p class="font-title second-font">Total Estimated</p>
+                <p class="blue-color font-title second-font">834</p>
               </div>
             </div>
           </div>
         </div>
+        <!-- dashboard post -->
         <div class="row dashboard__post">
           <div class="col-md-4 ">
             <div class="post__title bd--wrap bg-w">
-              <p class="mb-0">Blog Post</p>
+              <p class="mb-0 font-title second-font font-title">Blog Post</p>
               <p class="mb-0">...</p>
             </div>
             <div class="post__content bd--wrap bg-w">
               <div class="content-wrap bd--wrap">
                 <div class="post__content-top">
                   <div class="avatar post__avatar">
-                    <img src="images/photo2.png" alt="avatar" />
+                    <img src="images/avatar2.jpg" alt="avatar" />
                   </div>
                   <div class="post__name">
                     <span class="pink-color">Lisa Garret</span>
@@ -272,7 +274,7 @@
               </div>
             </div>
             <div class="comment d-flex p-3 bd--wrap bg-w">
-              <p>Write a comment...</p>
+              <input type="text" placeholder="Write a comment..." class="bg-circle-none">
               <div class="comment__icon ml-auto">
                 <i class="fa fa-smile-o font--post-icon"></i>
                 <i class="fa fa-pencil font--post-icon"></i>
@@ -282,12 +284,12 @@
 
           <div class="col-md-4 ">
             <div class="post__title bd--wrap bg-w">
-              <p class="mb-0">Top Author</p>
+              <p class="mb-0 font-title second-font">Top Author</p>
               <p class="mb-0">...</p>
             </div>
             <div class="post__content bd--wrap bg-w author__content">
               <div class=" author__avatar avatar post__avatar">
-                <img src="images/photo2.png" alt="avatar" />
+                <img src="images/avatar3.jpg" alt="avatar" />
                 <div class="active"><div class="active__icon"></div></div>
               </div>
               <p
@@ -297,7 +299,7 @@
               </p>
               <div class="sale">
                 <div>
-                  <p class="txt-align-center third-font">12,125</p>
+                  <p class="txt-align-center third-font fw--bold">12,125</p>
                   <p class="txt-align-center third-font">Total Sale</p>
                 </div>
                 <div class="sale__chart"><canvas id="saleChart"></canvas></div>
@@ -328,25 +330,25 @@
 
           <div class="col-md-4 ">
             <div class="post__title bd--wrap bg-w">
-              <p class="mb-0">Reviews</p>
+              <p class="mb-0 font-title second-font">Reviews</p>
               <p class="mb-0">...</p>
             </div>
             <div class="bd--wrap bg-w scrollbar">
               <div class=" row m-0 review__item p-3">
                 <div class="col-md-2 d-flex align-items-center">
                   <div class=" row avatar ">
-                    <img src="images/photo2.png" alt="avatar" />
+                    <img src="images/avatar4.jpg" alt="avatar" />
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <p class="m-0">Nathan Hunter</p>
-                  <div>
+                  <p class="m-0 fw--bold">Nathan Hunter</p>
+                  <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                   </div>
-                  <p class="m-0">Lorem ipsum dolor sit amet...</p>
-                  <p class="m-0">30 minutes ago - 2 Reply</p>
+                  <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
+                  <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
                 <div class="col-md-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
@@ -355,18 +357,18 @@
               <div class=" row m-0 review__item p-3">
                 <div class="col-md-2 d-flex align-items-center">
                   <div class=" row avatar ">
-                    <img src="images/photo2.png" alt="avatar" />
+                    <img src="images/avatar5.jpg" alt="avatar" />
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <p class="m-0">Nathan Hunter</p>
-                  <div>
+                  <p class="m-0 fw--bold">Nathan Hunter</p>
+                  <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                   </div>
-                  <p class="m-0">Lorem ipsum dolor sit amet...</p>
-                  <p class="m-0">30 minutes ago - 2 Reply</p>
+                  <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
+                  <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
                 <div class="col-md-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
@@ -375,18 +377,18 @@
               <div class=" row m-0 review__item p-3">
                 <div class="col-md-2 d-flex align-items-center">
                   <div class=" row avatar ">
-                    <img src="images/photo2.png" alt="avatar" />
+                    <img src="images/avatar6.jpg" alt="avatar" />
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <p class="m-0">Nathan Hunter</p>
-                  <div>
+                  <p class="m-0 fw--bold">Nathan Hunter</p>
+                  <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                   </div>
-                  <p class="m-0">Lorem ipsum dolor sit amet...</p>
-                  <p class="m-0">30 minutes ago - 2 Reply</p>
+                  <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
+                  <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
                 <div class="col-md-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
@@ -395,18 +397,18 @@
               <div class=" row m-0 review__item p-3">
                 <div class="col-md-2 d-flex align-items-center">
                   <div class=" row avatar ">
-                    <img src="images/photo2.png" alt="avatar" />
+                    <img src="images/avatar7.png" alt="avatar" />
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <p class="m-0">Nathan Hunter</p>
-                  <div>
+                  <p class="m-0 fw--bold">Nathan Hunter</p>
+                  <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                   </div>
-                  <p class="m-0">Lorem ipsum dolor sit amet...</p>
-                  <p class="m-0">30 minutes ago - 2 Reply</p>
+                  <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
+                  <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
                 <div class="col-md-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
@@ -415,18 +417,18 @@
               <div class=" row m-0 review__item p-3">
                 <div class="col-md-2 d-flex align-items-center">
                   <div class=" row avatar ">
-                    <img src="images/photo2.png" alt="avatar" />
+                    <img src="images/avatar2.jpg" alt="avatar" />
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <p class="m-0">Nathan Hunter</p>
-                  <div>
+                  <p class="m-0 fw--bold">Nathan Hunter</p>
+                  <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                   </div>
-                  <p class="m-0">Lorem ipsum dolor sit amet...</p>
-                  <p class="m-0">30 minutes ago - 2 Reply</p>
+                  <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
+                  <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
                 <div class="col-md-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
@@ -435,18 +437,18 @@
               <div class=" row m-0 review__item p-3">
                 <div class="col-md-2 d-flex align-items-center">
                   <div class=" row avatar ">
-                    <img src="images/photo2.png" alt="avatar" />
+                    <img src="images/avatar5.jpg" alt="avatar" />
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <p class="m-0">Nathan Hunter</p>
-                  <div>
+                  <p class="m-0 fw--bold">Nathan Hunter</p>
+                  <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                   </div>
-                  <p class="m-0">Lorem ipsum dolor sit amet...</p>
-                  <p class="m-0">30 minutes ago - 2 Reply</p>
+                  <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
+                  <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
                 <div class="col-md-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
@@ -455,14 +457,15 @@
             </div>
           </div>
         </div>
+        <!-- dashboard table -->
         <div class="dashboard__table mt-4">
           <div class="post__title bd--wrap bg-w">
-            <p class="mb-0">Products Overview</p>
+            <p class="mb-0 font-title second-font">Products Overview</p>
             <p class="mb-0">...</p>
           </div>
           <div class="post__content bd--wrap bg-w">
-            <table>
-              <tr class="tb-header-bg">
+            <table class="third-font">
+              <tr class="tb-header-bg fw--semi-bold">
                 <th><input type="checkbox" /></th>
                 <th>Order ID</th>
                 <th>Custom Name</th>
@@ -478,15 +481,355 @@
                 <td>Customer Name</td>
                 <td>US</td>
                 <td>10/12/2017</td>
-                <td><button>Paid</button></td>
+                <td >
+                  <button class="bg-blue btn--generate w-color">Paid</button>
+                </td>
                 <td>$432.50</td>
-                <td><button>edit</button> <button>x</button></td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>054-01-FR</td>
+                <td>Customer Name</td>
+                <td>US</td>
+                <td>10/12/2017</td>
+                <td >
+                  <button class="dashboard__btn btn--generate w-color pd--btn-fail">
+                    Failed
+                  </button>
+                </td>
+                <td>$432.50</td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>054-01-FR</td>
+                <td>Customer Name</td>
+                <td>US</td>
+                <td>10/12/2017</td>
+                <td >
+                  <button class="bg-blue btn--generate w-color">Paid</button>
+                </td>
+                <td>$432.50</td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>054-01-FR</td>
+                <td>Customer Name</td>
+                <td>US</td>
+                <td>10/12/2017</td>
+                <td>
+                  <button class="bg-blue btn--generate w-color">Paid</button>
+                </td>
+                <td>$432.50</td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>054-01-FR</td>
+                <td>Customer Name</td>
+                <td>US</td>
+                <td>10/12/2017</td>
+                <td>
+                  <button class="bg-blue btn--generate w-color">Paid</button>
+                </td>
+                <td>$432.50</td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>054-01-FR</td>
+                <td>Customer Name</td>
+                <td>US</td>
+                <td>10/12/2017</td>
+                <td >
+                  <button class="bg-blue btn--generate w-color">Paid</button>
+                </td>
+                <td>$432.50</td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>054-01-FR</td>
+                <td>Customer Name</td>
+                <td>US</td>
+                <td>10/12/2017</td>
+                <td >
+                  <button class="bg-blue btn--generate w-color">Paid</button>
+                </td>
+                <td>$432.50</td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>054-01-FR</td>
+                <td>Customer Name</td>
+                <td>US</td>
+                <td>10/12/2017</td>
+                <td>
+                  <button class="bg-blue btn--generate w-color">Paid</button>
+                </td>
+                <td>$432.50</td>
+                <td class="center">
+                  <button class="btn--action">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn--action">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </td>
               </tr>
             </table>
           </div>
+          <div class="post__title bd--wrap bg-w">
+            <p class="mb-0">Showing 1-8 / 20 Results</p>
+            <div class="mb-0 d-flex">
+              <div class="bg-circle bg-circle-none">
+                <a href="" class=" m-auto">...</a>
+              </div>
+              <div class="bg-circle bg-circle-none">
+                <a href="" class=" m-auto">1</a>
+              </div>
+              <div class="bg-circle">
+                <a href="" class="w-color m-auto">2</a>
+              </div>
+              <div class="bg-circle bg-circle-none">
+                <a href="" class=" m-auto">3</a>
+              </div>
+              <div class="bg-circle bg-circle-none">
+                <a href="" class=" m-auto">...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- dashboard task -->
+        <div class="row dashboard__table mt-4">
+          <div class="col-md-3">
+            <div class="post__title bd--wrap bg-w ">
+              <p class="mb-0 font-title second-font">Tasks</p>
+              <p class="mb-0">...</p>
+            </div>
+            <div class="post__content bd--wrap bg-w pd--task scrollbar">
+              <p class="mb-0 second-font font--task font-sz-24 font--category purple-color p-0">Today</p>
+              <span class="pink-color second-font font--task font-sz-24">12 </span><span class="second-font font--task violet-color">new tasks</span>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+              <div class="task vertical-center bd-left">
+                <input type="checkbox" class="ml-3">
+                <span class="ml-3 second-font font--task violet-color">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="post__title bd--wrap bg-w ">
+              <p class="mb-0 font-title second-font">Support Tickets</p>
+              <p class="mb-0">...</p>
+            </div>
+            <div class="post__content pd--2 bd--wrap bg-w pd--task scrollbar">
+              <div class=" row mb--5">
+               <div class="col-md-2">
+                  <div class=" avatar ">
+                    <img src="images/avatar7.png" alt="avatar" />
+                  </div>
+                </div>
+                <div class="col-md-10 pl-0 pr-5">
+                  <p class="fw--bold">Brandon Smith Reply</p>
+                  <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
+                  alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
+                  velit culpa?</p>
+                </div>
+              </div>
+              <div class=" row mb--5">
+                <div class="col-md-2">
+                  <div class=" avatar ">
+                    <img src="images/avatar1.jpg" alt="avatar" />
+                  </div>
+                </div>
+                <div class="col-md-10 pl-0 pr-5">
+                  <p class="fw--bold">Brandon Smith Reply</p>
+                  <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
+                    alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
+                    velit culpa?</p>
+                </div>
+              </div>
+              <div class=" row mb--5">
+                <div class="col-md-2">
+                  <div class=" avatar ">
+                    <img src="images/avatar5.jpg" alt="avatar" />
+                  </div>
+                </div>
+                <div class="col-md-10 pl-0 pr-5">
+                  <p class="fw--bold">Brandon Smith Reply</p>
+                  <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
+                    alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
+                    velit culpa?</p>
+                </div>
+              </div>
+              <div class=" row mb--5">
+                <div class="col-md-2">
+                  <div class=" avatar ">
+                    <img src="images/photo2.png" alt="avatar" />
+                  </div>
+                </div>
+                <div class="col-md-10 pl-0 pr-5">
+                  <p class="fw--bold">Brandon Smith Reply</p>
+                  <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
+                    alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
+                    velit culpa?</p>
+                </div>
+              </div>
+              <div class=" row mb--5">
+                <div class="col-md-2">
+                  <div class=" avatar ">
+                    <img src="images/photo2.png" alt="avatar" />
+                  </div>
+                </div>
+                <div class="col-md-10 pl-0 pr-5">
+                  <p class="fw--bold">Brandon Smith Reply</p>
+                  <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
+                  alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
+                  velit culpa?</p>
+                </div>
+              </div>
+              <div class=" row mb--5">
+                <div class="col-md-2">
+                  <div class=" avatar ">
+                    <img src="images/avatar4.jpg" alt="avatar" />
+                  </div>
+                </div>
+                <div class="col-md-10 pl-0 pr-5">
+                  <p class="fw--bold">Brandon Smith Reply</p>
+                  <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
+                    alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
+                    velit culpa?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post__title bd--wrap bg-w">
+              <p class="mb-0 font-title second-font">Activity</p>
+              <p class="mb-0">...</p>
+            </div>
+            <div class="post__content bd--wrap bg-w pd--task scrollbar">
+              <div class="bd-left activity pd--activity">
+                <div class="bg-circle activity__point"></div>
+                <p class="p-0 fw--bold">User name</p>
+                <p class="violet-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum maxime quaerat laborum cupiditate totam possimus.</p>
+              </div>   
+              <div class="bd-left activity pd--activity">
+                <div class="bg-circle activity__point bg-blue"></div>
+                <p class="p-0 fw--bold">User name</p>
+                <p class="violet-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum maxime quaerat laborum cupiditate totam
+                  possimus.</p>
+              </div>
+              <div class="bd-left activity pd--activity">
+                <div class="bg-circle activity__point bg-pink"></div>
+                <p class="p-0 fw--bold">User name</p>
+                <p class="violet-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum maxime quaerat laborum cupiditate totam
+                  possimus.</p>
+              </div>
+              <div class="bd-left activity pd--activity">
+                <div class="bg-circle activity__point"></div>
+                <p class="p-0 fw--bold">User name</p>
+                <p class="violet-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem earum maxime quaerat laborum cupiditate totam
+                  possimus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer d-flex flex-row-reverse mt-4 bg">
+          <div class="footer__right ml-auto">
+            <a href="">Menu Link</a>
+            <a href="">Menu Link</a>
+            <a href="">Menu Link</a>
+          </div>
+          <div class="footer__left mr-auto">
+            Created with <i class="fa fa-heart font--post-icon pink-color"></i> by Saerox
+          </div>
         </div>
       </div>
+  
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

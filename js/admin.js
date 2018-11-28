@@ -236,7 +236,7 @@ $(document).ready(function() {
         {
           borderColor: $blue_color,
           fill: false,
-          data: [0, 38, 24, 69, 38, 74]
+          data: [0, 38, 24, 69, 38, 85]
         }
       ]
     },

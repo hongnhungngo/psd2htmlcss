@@ -8,6 +8,7 @@
   --menu-bg-color: #2c304d;
   --dashboard-bg-color: #f3f4f8;
   --blue-color: #06a0bd;
+  --purple-color: #5d5386;
 }
 html {
   font-size: 62.5%;
@@ -21,6 +22,12 @@ body {
 }
 .third-font {
   font-family: "Montserrat", sans-serif;
+}
+.font-title {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: var(--menu-bg-color);
 }
 .blue-color {
   color: var(--blue-color);
@@ -174,8 +181,8 @@ body {
   padding: 2rem;
 }
 .btn--generate {
-  border-radius: 1rem;
-  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
   border: 1px solid #f5f4f7;
 }
 .dashboard__btn {
@@ -301,8 +308,8 @@ body {
 .author__avatar {
   position: relative;
   margin: 1rem auto;
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
 }
 .active {
   position: absolute;
@@ -310,7 +317,7 @@ body {
   height: 1rem;
   background: white;
   border-radius: 50%;
-  top: 1.4rem;
+  top: 0.9rem;
   right: 0;
   display: flex;
 }
@@ -333,9 +340,10 @@ body {
   padding-top: 3rem;
 }
 .sale__chart {
-  width: 100px;
-  height: 61px;
+  width: 16.5rem;
+  height: 8rem;
   margin-left: 15px;
+  margin-top: -1.5rem;
 }
 #saleChart {
   max-width: 100%;
@@ -375,13 +383,102 @@ table {
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 1rem;
+  color: var(--violet-color);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 .tb-header-bg {
-  background: #133bdb;
+  background: var(--dashboard-bg-color);
   /* border-radius: 0.5rem; */
 }
 th,
 td {
   padding: 1rem;
+}
+th {
+  color: var(--menu-bg-color);
+  font-weight: 600;
+}
+.btn--action {
+  border: none;
+  background: none;
+}
+.center {
+  text-align: center;
+}
+
+.bg-circle {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background: var(--purple-color);
+  display: flex;
+}
+.bg-blue {
+  background: var(--blue-color);
+}
+.bg-circle-none {
+  background: none;
+  border: none;
+}
+.status-btn:hover {
+  background: var(--pink-color);
+}
+/* dashboard task */
+.task {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+.bd-left {
+  border-left: 1px solid var(--purple-color);
+}
+.font--task {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+.font-sz-24 {
+  font-size: 2.4rem;
+}
+.purple-color {
+  color: var(--purple-color);
+}
+.pd--task {
+  padding: 2rem 1rem;
+}
+.mb--5 {
+  margin-bottom: 5px;
+}
+.pd--btn-fail {
+  padding: 0.5rem 0.9rem;
+}
+/* dashboard activity */
+.pd--activity {
+  padding: 0.5rem 3rem 0.5rem 1.5rem;
+}
+.activity__point {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: -0.5rem;
+  top: 0.8rem;
+}
+.activity {
+  position: relative;
+}
+.pd--2 {
+  padding: 2rem;
+}
+.footer {
+  padding: 1rem 2rem;
+  margin: 0 -2rem -2rem;
+}
+.bg-pink {
+  background: var(--pink-color);
 }
