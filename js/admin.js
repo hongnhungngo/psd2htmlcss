@@ -4,7 +4,9 @@ $(document).ready(function() {
   var $gray_color = "#f2f3f8";
   var $text_color = "#2c304d";
   var $blue_light_color = "#9ec1f3";
+  var $screen_width = $(window).width();
   //menu icon toggle
+
   $(document).on("click", ".menu__icon", function() {
     $(this)
       .siblings(".dropdown")
@@ -16,6 +18,7 @@ $(document).ready(function() {
       .siblings(".dropdown-open")
       .toggle();
   });
+
   // close sub menu
   $(document).on("click", ".dropdown-close", function() {
     $(this)
@@ -39,6 +42,18 @@ $(document).ready(function() {
     $(this).toggle();
   });
   // toggle menu
+  if ($screen_width < 576) {
+    $(document).on("click", ".header__toggle", function() {
+      if ($(".menu").hasClass("d--block")) {
+        $(".menu").removeClass("d--block");
+      } else {
+        $(".menu").addClass("d--block");
+      }
+    });
+  } else {
+    if (!$(".menu").hasClass("d--none")) $(".menu").removeClass("d--none");
+    if (!$(".menu").hasClass("d--block")) $(".menu").removeClass("d--block");
+  }
   $(document).on("click", ".header__toggle", function() {
     if (
       $(".line-top").hasClass("line-top--toggle") &&

@@ -29,6 +29,14 @@ body {
   height: 100vh;
   position: relative;
 }
+.header .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.header .carousel-indicators .active {
+  border: 2px solid red;
+}
 .header__bg {
   background: url(../images/banner.png) no-repeat center center;
   background-size: cover;
@@ -308,7 +316,7 @@ body {
 }
 .video__description {
   margin: auto;
-  padding: 100px;
+  padding: 10rem 0;
 }
 
 .video__play {
@@ -353,7 +361,6 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.8rem;
-  padding: 0 30%;
 }
 .video__time {
   text-align: center;
@@ -367,7 +374,7 @@ body {
   background: url(../images/phone-in-hand.png) no-repeat center center;
   background-size: cover;
   height: 100%;
-  padding: 14rem 0;
+  padding: 10rem 0;
 }
 .mobile__title {
   font-weight: var(--semi-bold);
@@ -504,7 +511,6 @@ body {
 }
 .footer__img {
   width: 100%;
-  height: 5rem;
 }
 .footer__dribble {
   padding: 2pt;

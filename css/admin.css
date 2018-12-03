@@ -121,6 +121,7 @@ body {
   width: 9rem;
   background: var(--menu-bg-color);
   padding-top: 1rem;
+  transition: width 1s;
 }
 .menu * {
   text-align: center;
@@ -128,6 +129,7 @@ body {
 }
 .menu--toggle {
   width: 20rem;
+  transition: width 1s;
 }
 .font {
   font-size: 13px;
@@ -196,6 +198,7 @@ body {
   justify-content: center;
   background: white;
   padding: 0.7rem 0;
+  height: 47%;
 }
 .hit-rate-chart {
   width: 200px;
@@ -212,8 +215,9 @@ body {
   left: 2rem;
 }
 .happy-customer {
-  margin-top: 2rem;
+  margin-top: 6%;
   background: linear-gradient(to right, #685fe9, #6ac9e0);
+  height: 47%;
 }
 .w-color {
   color: white;
@@ -379,16 +383,19 @@ body {
 }
 /* dashboard table */
 table {
-  width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
   border-radius: 1rem;
   color: var(--violet-color);
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 500;
+  overflow: auto;
+  width: 100%;
 }
-
+/* .scroll-table {
+  display: inline-block;
+  height: 30rem;
+} */
 .tb-header-bg {
   background: var(--dashboard-bg-color);
   /* border-radius: 0.5rem; */
@@ -482,3 +489,4 @@ th {
 .bg-pink {
   background: var(--pink-color);
 }
+

@@ -1,0 +1,62 @@
+:root {
+  --input-bg-color: #f0f0f0;
+  --placeholder-color: #c7c7c7;
+  --submit-bg-color: #fea15d;
+  --text-color: #dfdfdf;
+  --btn-login-bg-color: #a9dd7d;
+}
+.form__wrap {
+  padding: 20px 40px 20px 20px;
+  border: 1px solid var(--placeholder-color);
+  box-shadow: 3px var(--text-color);
+}
+.form__wrap form {
+  width: 100%;
+}
+.input__generate {
+  width: 100%;
+  border: 1px solid var(--input-bg-color);
+  margin: 10px;
+  padding: 10px;
+  background: var(--input-bg-color);
+}
+::placeholder {
+  color: var(--placeholder-color);
+}
+.bd--generate {
+  border-radius: 5px;
+}
+.term {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  padding: 10px;
+}
+.mb--0 {
+  margin-bottom: 0;
+}
+.btn--generate {
+  border: 1px solid;
+  color: white;
+  padding: 5px 15px;
+}
+.btn__submit {
+  display: flex;
+  justify-content: center;
+}
+.btn--submit {
+  background: var(--submit-bg-color);
+}
+.link--generate {
+  color: var(--placeholder-color);
+}
+.link--generate:hover {
+  color: var(--submit-bg-color);
+  text-decoration: none;
+}
+.text-color {
+  color: var(--text-color);
+}
+.btn-login-bg {
+  background: var(--btn-login-bg-color);
+}

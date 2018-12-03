@@ -25,6 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
     <!-- header -->
@@ -224,21 +225,25 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="hit-rate delivered-order">
+            <div class="hit-rate delivered-order row">
               <p class="chart-title font-title second-font">Delivered Orders</p>
-              <div class="delivered-order-chart">
-                <canvas id="oderChart"></canvas>
-              </div>
-              <div class="statistic">
-                <button class="view-all-btn btn--generate">View all</button>
-                <p class="font-title second-font">New Orders</p>
-                <div class="hit-rate-chart new-order">
-                  <canvas id="newOrder"></canvas>
+              <div class="col-md-8">
+                <div class="delivered-order-chart">
+                  <canvas id="oderChart"></canvas>
                 </div>
-                <p class="font-title second-font">Total Delivered</p>
-                <p class="blue-color font-title second-font">2564</p>
-                <p class="font-title second-font">Total Estimated</p>
-                <p class="blue-color font-title second-font">834</p>
+              </div>
+              <div class="col-md-4">
+                <div class="statistic">
+                  <button class="view-all-btn btn--generate">View all</button>
+                  <p class="font-title second-font">New Orders</p>
+                  <div class="hit-rate-chart new-order">
+                    <canvas id="newOrder"></canvas>
+                  </div>
+                  <p class="font-title second-font">Total Delivered</p>
+                  <p class="blue-color font-title second-font">2564</p>
+                  <p class="font-title second-font">Total Estimated</p>
+                  <p class="blue-color font-title second-font">834</p>
+                </div>
               </div>
             </div>
           </div>
@@ -335,12 +340,12 @@
             </div>
             <div class="bd--wrap bg-w scrollbar">
               <div class=" row m-0 review__item p-3">
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <div class=" row avatar ">
                     <img src="images/avatar4.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="m-0 fw--bold">Nathan Hunter</p>
                   <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
@@ -350,17 +355,17 @@
                   <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
                   <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
                 </div>
               </div>
               <div class=" row m-0 review__item p-3">
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <div class=" row avatar ">
                     <img src="images/avatar5.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="m-0 fw--bold">Nathan Hunter</p>
                   <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
@@ -370,17 +375,17 @@
                   <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
                   <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
                 </div>
               </div>
               <div class=" row m-0 review__item p-3">
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <div class=" row avatar ">
                     <img src="images/avatar6.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="m-0 fw--bold">Nathan Hunter</p>
                   <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
@@ -390,17 +395,17 @@
                   <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
                   <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
                 </div>
               </div>
               <div class=" row m-0 review__item p-3">
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <div class=" row avatar ">
                     <img src="images/avatar7.png" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="m-0 fw--bold">Nathan Hunter</p>
                   <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
@@ -410,17 +415,17 @@
                   <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
                   <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
                 </div>
               </div>
               <div class=" row m-0 review__item p-3">
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <div class=" row avatar ">
                     <img src="images/avatar2.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="m-0 fw--bold">Nathan Hunter</p>
                   <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
@@ -430,17 +435,17 @@
                   <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
                   <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
                 </div>
               </div>
               <div class=" row m-0 review__item p-3">
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <div class=" row avatar ">
                     <img src="images/avatar5.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="m-0 fw--bold">Nathan Hunter</p>
                   <div class="purple-color">
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i>
@@ -450,7 +455,7 @@
                   <p class="m-0 violet-color">Lorem ipsum dolor sit amet...</p>
                   <p class="m-0 violet-color">30 minutes ago - 2 Reply</p>
                 </div>
-                <div class="col-md-2 d-flex align-items-center">
+                <div class="col-2 d-flex align-items-center">
                   <i class="fa fa-heart font--post-icon pink-color"></i>
                 </div>
               </div>
@@ -464,7 +469,8 @@
             <p class="mb-0">...</p>
           </div>
           <div class="post__content bd--wrap bg-w">
-            <table class="third-font">
+            <table class="third-font scrolltable">
+              <thead>
               <tr class="tb-header-bg fw--semi-bold">
                 <th><input type="checkbox" /></th>
                 <th>Order ID</th>
@@ -475,6 +481,8 @@
                 <th>Order Total</th>
                 <th>Actions</th>
               </tr>
+              </thead>
+              <tbody>
               <tr>
                 <td><input type="checkbox" /></td>
                 <td>054-01-FR</td>
@@ -485,7 +493,7 @@
                   <button class="bg-blue btn--generate w-color">Paid</button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td>
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -506,7 +514,7 @@
                   </button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td>
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -525,7 +533,7 @@
                   <button class="bg-blue btn--generate w-color">Paid</button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td >
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -544,7 +552,7 @@
                   <button class="bg-blue btn--generate w-color">Paid</button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td >
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -563,7 +571,7 @@
                   <button class="bg-blue btn--generate w-color">Paid</button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td >
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -582,7 +590,7 @@
                   <button class="bg-blue btn--generate w-color">Paid</button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td >
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -601,7 +609,7 @@
                   <button class="bg-blue btn--generate w-color">Paid</button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td >
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -620,7 +628,7 @@
                   <button class="bg-blue btn--generate w-color">Paid</button>
                 </td>
                 <td>$432.50</td>
-                <td class="center">
+                <td >
                   <button class="btn--action">
                     <i class="fa fa-edit"></i>
                   </button>
@@ -629,6 +637,7 @@
                   </button>
                 </td>
               </tr>
+              </tbody>
             </table>
           </div>
           <div class="post__title bd--wrap bg-w">
@@ -703,12 +712,12 @@
             </div>
             <div class="post__content pd--2 bd--wrap bg-w pd--task scrollbar">
               <div class=" row mb--5">
-               <div class="col-md-2">
+               <div class="col-2">
                   <div class=" avatar ">
                     <img src="images/avatar7.png" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-10 pl-0 pr-5">
+                <div class="col-10 pr-5">
                   <p class="fw--bold">Brandon Smith Reply</p>
                   <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
                   alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
@@ -716,12 +725,12 @@
                 </div>
               </div>
               <div class=" row mb--5">
-                <div class="col-md-2">
+                <div class="col-2">
                   <div class=" avatar ">
                     <img src="images/avatar1.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-10 pl-0 pr-5">
+                <div class="col-10 pr-5">
                   <p class="fw--bold">Brandon Smith Reply</p>
                   <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
                     alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
@@ -729,12 +738,12 @@
                 </div>
               </div>
               <div class=" row mb--5">
-                <div class="col-md-2">
+                <div class="col-2">
                   <div class=" avatar ">
                     <img src="images/avatar5.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-10 pl-0 pr-5">
+                <div class="col-10  pr-5">
                   <p class="fw--bold">Brandon Smith Reply</p>
                   <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
                     alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
@@ -742,12 +751,12 @@
                 </div>
               </div>
               <div class=" row mb--5">
-                <div class="col-md-2">
+                <div class="col-2">
                   <div class=" avatar ">
                     <img src="images/photo2.png" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-10 pl-0 pr-5">
+                <div class="col-10  pr-5">
                   <p class="fw--bold">Brandon Smith Reply</p>
                   <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
                     alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
@@ -755,12 +764,12 @@
                 </div>
               </div>
               <div class=" row mb--5">
-                <div class="col-md-2">
+                <div class="col-2">
                   <div class=" avatar ">
                     <img src="images/photo2.png" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-10 pl-0 pr-5">
+                <div class="col-10 pr-5">
                   <p class="fw--bold">Brandon Smith Reply</p>
                   <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
                   alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
@@ -768,12 +777,12 @@
                 </div>
               </div>
               <div class=" row mb--5">
-                <div class="col-md-2">
+                <div class="col-2">
                   <div class=" avatar ">
                     <img src="images/avatar4.jpg" alt="avatar" />
                   </div>
                 </div>
-                <div class="col-md-10 pl-0 pr-5">
+                <div class="col-10 pr-5">
                   <p class="fw--bold">Brandon Smith Reply</p>
                   <p class="violet-color"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit officia error iste. Labore maxime tempore
                     alias ullam. Quasi dignissimos ipsam obcaecati voluptatibus, sint soluta ullam quaerat perferendis error numquam
@@ -816,7 +825,7 @@
         </div>
 
         <!-- footer -->
-        <div class="footer d-flex flex-row-reverse mt-4 bg">
+        <div class="footer d-flex flex-row-reverse mt-4 bg-w">
           <div class="footer__right ml-auto">
             <a href="">Menu Link</a>
             <a href="">Menu Link</a>
@@ -827,7 +836,6 @@
           </div>
         </div>
       </div>
-  
     </div>
 
 
